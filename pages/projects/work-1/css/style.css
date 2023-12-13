@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header{
+  width: 100%;
+  background-color: #068FFF;
+}
+
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo{
+  font-size: 24px;
+  text-decoration: none;
+  color: #f5f6f7;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.links{
+  background-color: #1e1e1e;
+}
+
+.header-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.header-menu li a {
+  text-decoration: none;
+  color: #4e4feb;
+  transition: 0.3s;
+}
+
+.header-menu li {
+  position: relative;
+}
+
+.header-menu li a:after {
+  content: "";
+  background-color: #f5f6f7;
+  position: absolute;
+  border-radius: 2px;
+  width: 0px;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.header-menu li a:hover::after {
+  border: #f5f6f7 1px solid;
+  width: 100%;
+}
+
+.header-menu li a:hover {
+  color: #f5f6f7;
+}
+
+.hero {
+  background-color: #068fff;
+}
+
+.hero-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+dt {
+  color: #1e1e1e;
+}
+
+dd {
+  color: #1e1e1e;
+}
+
+.aluminium {
+  max-width: 500px;
+}
+
+.wrapper-state{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 0;
+}
