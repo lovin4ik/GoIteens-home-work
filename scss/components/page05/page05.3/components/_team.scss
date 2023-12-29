@@ -1,0 +1,73 @@
+.team {
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	&__text {
+		max-width: 1100px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		> h1 {
+			font-family: "Kaushan Script", cursive;
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 34px;
+			color: #333333;
+		}
+		> h3 {
+			margin: 20px 0 50px 0;
+			font-size: 30px;
+			padding-bottom: 35px;
+			font-weight: 700;
+			color: #333333;
+			position: relative;
+		}
+		> h3:after {
+			content: "";
+			width: 60px;
+			position: absolute;
+			border: 2px solid #f38181;
+			bottom: 0;
+			left: 40%;
+		}
+		> p {
+			text-align: center;
+			color: #b6b6b6;
+			font-family: "Roboto", sans-serif;
+			font-size: 15px;
+			font-weight: 400;
+			margin-bottom: 30px;
+		}
+	}
+	&__puople {
+		display: flex;
+		gap: 30px;
+		align-items: center;
+		> li {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 80px;
+			> img {
+				max-width: 380px;
+			}
+			> h4 {
+				margin: 30px 0 10px;
+				font-size: 14px;
+				font-weight: 400;
+				color: #333333;
+			}
+			> p {
+				font-family: "Roboto", sans-serif;
+				font-size: 15px;
+				font-weight: 300;
+				color: #b6b6b6;
+			}
+		}
+	}
+}

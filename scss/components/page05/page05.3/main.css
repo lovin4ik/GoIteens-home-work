@@ -119,6 +119,122 @@
   content: "";
 }
 
+.team__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.team__text {
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.team__text > h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #333333;
+}
+.team__text > h3 {
+  margin: 20px 0 50px 0;
+  font-size: 30px;
+  padding-bottom: 35px;
+  font-weight: 700;
+  color: #333333;
+  position: relative;
+}
+.team__text > h3:after {
+  content: "";
+  width: 60px;
+  position: absolute;
+  border: 2px solid #f38181;
+  bottom: 0;
+  left: 40%;
+}
+.team__text > p {
+  text-align: center;
+  color: #b6b6b6;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.team__puople {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.team__puople > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.team__puople > li > img {
+  max-width: 380px;
+}
+.team__puople > li > h4 {
+  margin: 30px 0 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+.team__puople > li > p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #b6b6b6;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  position: relative;
+}
+.footer__wrapper > p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer__wrapper > form {
+  display: flex;
+  gap: 0;
+}
+.footer__wrapper > form > input {
+  border: solid #b6b6b6 1px;
+  padding: 10px;
+  outline: none;
+  color: #b6b6b6;
+}
+.footer__wrapper > form > input:hover,
+.footer__wrapper > form input:focus {
+  border: solid 1px #b6b6b6;
+}
+.footer__wrapper > form > button {
+  background-color: #95e1d3;
+  padding: 10px 40px;
+  border: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  transform: translateX(-2px);
+  cursor: pointer;
+}
+.footer__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 1px solid #b6b6b6;
+}
+
 * {
   padding: 0;
   margin: 0;

@@ -1,0 +1,45 @@
+.footer {
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 0;
+		position: relative;
+		> p {
+			font-size: 14px;
+			font-weight: 400;
+		}
+		> form {
+			display: flex;
+			gap: 0;
+			> input {
+				border: solid #b6b6b6 1px;
+				padding: 10px;
+				outline: none;
+				color: #b6b6b6;
+			}
+			> input:hover,
+			input:focus {
+				border: solid 1px #b6b6b6;
+			}
+			> button {
+				background-color: #95e1d3;
+				padding: 10px 40px;
+				border: 0;
+				color: #fff;
+				font-size: 14px;
+				font-weight: 700;
+				transform: translateX(-2px);
+				cursor: pointer;
+			}
+		}
+	}
+	&__wrapper::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		border: 1px solid #b6b6b6;
+	}
+}

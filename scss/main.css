@@ -110,7 +110,7 @@
 }
 
 .page02__hero {
-  background-color: var(--colro-dark2-cyan);
+  background-color: var(--color-dark2-cyan);
 }
 .page02__hero__wrapper {
   padding: 200px 0;
@@ -257,7 +257,7 @@
 }
 
 .page02__fish {
-  background-color: var(--colro-dark4-cyan);
+  background-color: var(--color-dark4-cyan);
 }
 .page02__fish__wrapper {
   padding: 40px 0;
