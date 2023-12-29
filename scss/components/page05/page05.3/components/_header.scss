@@ -1,0 +1,43 @@
+.header {
+	width: 100%;
+	background-color: transparent;
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		padding-top: 30px;
+	}
+	&__nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		&__logo {
+			font-size: 30px;
+			font-weight: 700;
+			line-height: 36px;
+		}
+		&__menu {
+			display: flex;
+			gap: 55px;
+			li a {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 17px;
+			}
+			li {
+				position: relative;
+			}
+			li .active {
+				color: #f38181;
+			}
+			li .active::after {
+				position: absolute;
+				left: 0;
+				bottom: -10px;
+				width: 100%;
+				border: #f38181 2px solid;
+				content: "";
+			}
+		}
+	}
+}

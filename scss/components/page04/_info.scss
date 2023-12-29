@@ -1,0 +1,29 @@
+.page04 {
+	&__info {
+		margin: 95px 0;
+		&__title {
+			position: absolute;
+			left: 100000px;
+		}
+		&__menu {
+			display: flex;
+			gap: 30px;
+		}
+		&__menu li {
+			max-width: 270px;
+		}
+		&__menu li h3 {
+			font-size: 14px;
+			font-weight: 700;
+			font-family: "Roboto", sans-serif;
+			color: #212121;
+		}
+		&__menu li p {
+			font-family: "Roboto", sans-serif;
+			color: #757575;
+			font-size: 14px;
+			font-weight: 400;
+			padding-top: 10px;
+		}
+	}
+}

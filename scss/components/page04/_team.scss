@@ -1,0 +1,49 @@
+.page04 {
+	&__team {
+		background-color: #f5f4fa;
+		&__wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		&__title {
+			color: #212121;
+			font-size: 36px;
+			font-weight: 700;
+			padding: 95px 0 50px 0;
+			font-family: "Roboto", sans-serif;
+		}
+		&__menu {
+			display: flex;
+			gap: 30px;
+			padding-bottom: 95px;
+		}
+		&__puople {
+			max-width: 270px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			border-radius: 0px, 0px, 4px, 4px;
+			background-color: #fff;
+		}
+		&__puople img {
+			max-width: 270px;
+		}
+		&__puople h3 {
+			color: #212121;
+			font-size: 16px;
+			font-weight: 500;
+			font-family: "Roboto", sans-serif;
+			padding: 30px 0 10px 0;
+		}
+		&__puople p {
+			font-family: "Roboto", sans-serif;
+			font-size: 16px;
+			font-weight: 400;
+			color: #757575;
+			padding-bottom: 30px;
+		}
+	}
+}

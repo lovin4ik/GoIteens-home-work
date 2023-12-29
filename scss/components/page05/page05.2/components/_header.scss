@@ -1,0 +1,28 @@
+.header {
+	width: 100%;
+	background-color: transparent;
+	margin-bottom: 110px;
+	&__logo {
+		font-family: "Bilbo Swash Caps", cursive;
+		color: #fed136;
+		font-size: 36px;
+		font-family: 400;
+		line-height: 41px;
+	}
+	&__nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 45px;
+		&__menu {
+			display: flex;
+			gap: 40px;
+			li a {
+				color: #fed136;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 41px;
+			}
+		}
+	}
+}

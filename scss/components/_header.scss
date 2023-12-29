@@ -1,0 +1,38 @@
+.home__header {
+	width: 100%;
+	background-color: var(--color-dark-blue);
+
+	&__nav {
+		padding: 10px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		font-size: 24px;
+		font-weight: 500;
+		color: var(--color-yellow);
+		transition: 0.4s;
+	}
+
+	&__logo:hover {
+		color: var(--color-milk);
+	}
+
+	&__menu {
+		display: flex;
+		gap: 80px;
+	}
+
+	&__item a {
+		color: var(--color-yellow);
+		font-size: 18px;
+		font-weight: 500;
+		transition: 0.3s;
+	}
+
+	&__item a:hover {
+		color: var(--color-milk);
+	}
+}

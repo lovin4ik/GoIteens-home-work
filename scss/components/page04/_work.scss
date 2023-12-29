@@ -1,0 +1,21 @@
+.page04 {
+	&__work {
+		&__wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		&__title {
+			padding-bottom: 50px;
+			font-family: "Roboto", sans-serif;
+			font-size: 36px;
+			font-weight: 700;
+		}
+		&__works {
+			display: flex;
+			gap: 30px;
+			padding-bottom: 95px;
+		}
+	}
+}

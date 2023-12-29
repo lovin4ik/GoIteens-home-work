@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+// Шрифти //
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.wrapper {
+	max-width: 1220px;
+	margin: 0 auto;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+:root {
+	--color-pink: #e4a8fe;
+	--color-dark-pink: #ae77d5;
+	--color-dark1-purple: #7d4eac;
+	--color-dark2-purple: #542c85;
+	--color-dark3-purple: #2d165a;
+	--color-dark-purple: #140733;
+	//
+	--color-light: #ccd0fc;
+	--color-grey: #919ca0;
+	--color-dark1-blue: #465866;
+	--color-dark2-blue: #223442;
+	--color-dark3-blue: #0e1e2b;
+	--color-dark-blue: #05141b;
+	//
+	--color-light-cyan: #9dcae1;
+	--color-dark1-cyan: #6dadd0;
+	--color-dark2-cyan: #4c8bb7;
+	--color-dark3-cyan: #316fa2;
+	--color-dark4-cyan: #134671;
+	--color-dark-cyan: #00233d;
+	//
+	--color-yellow: #f6b166;
+	--color-dark-yellow: #d58c57;
+	--color-dark1-orange: #b26c4a;
+	--color-dark2-orange: #914e3b;
+	--color-dark3-orange: #6f362f;
+	--color-dark-orange: #4e211e;
+	//
+	--color-milk: #d4c2b4;
+	--color-light-red: #ac867b;
+	--color-light2-red: #854d4c;
+	--color-dark1-red: #612934;
+	--color-black-red: #12020c;
+	//
+	--color-light-green: #4ad66d;
+	--color-green: #2dc652;
+	--color-dark1-green: #25a244;
+	--color-dark2-green: #208b3b;
+	--color-dark3-green: #197431;
+	--color-dark4-green: #145d26;
+	//
+	--color-white: #ededed;
+	--color-coffee: #6f4e37;
+}

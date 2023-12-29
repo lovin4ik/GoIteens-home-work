@@ -1,0 +1,35 @@
+@font-face {
+	font-family: Playfair;
+	src: url(../../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+//  //
+
+* {
+	font-family: Playfair;
+	padding: 0;
+	margin: 0;
+	color: #7d7d7d;
+}
+
+.wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+button {
+	background-color: transparent;
+	border: 0;
+}

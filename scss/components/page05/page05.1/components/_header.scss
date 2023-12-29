@@ -1,0 +1,26 @@
+.page05-1 {
+	&__header {
+		width: 100%;
+		background-color: transparent;
+		margin-bottom: 90px;
+		&__nav {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-top: 71px;
+			&__menu {
+				display: flex;
+				gap: 100px;
+				li a {
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 18px;
+					transition: 0.4s;
+				}
+				li a:hover {
+					color: #03a9f4;
+				}
+			}
+		}
+	}
+}

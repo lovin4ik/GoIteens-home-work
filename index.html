@@ -3,58 +3,137 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Porfolio</title>
-		<link rel="stylesheet" href="./css/style.css" />
+		<!-- Заголовок -->
+		<title>Portfolio</title>
+		<!-- підключення css -->
+		<link rel="stylesheet" href="./scss/main.css" />
 	</head>
 	<body>
-		<header class="header">
+		<header class="home__header">
 			<div class="wrapper">
-				<nav class="navbar">
-					<a href="/" class="logo">Home work</a>
+				<nav class="home__header__nav">
+					<a href="/" class="home__header__logo">Portfolio</a>
+					<ul class="home__header__menu">
+						<li class="home__header__item"><a href="#projects">Projects</a></li>
+						<li class="home__header__item"><a href="#2">Additionaly`s</a></li>
+					</ul>
 				</nav>
 			</div>
 		</header>
-		<main class="main">
-			<section class="hero-section">
+		<main>
+			<section class="home__hero">
 				<div class="wrapper">
-					<h1 class="hero-title">Мої домашні роботи</h1>
-					<div class="projects">
-						<a href="./pages/projects/work-0-1/index.html" class="send-project">
-							<article class="art-project">
+					<div class="home__hero__wrapper">
+						<h2 class="home__hero__title" id="projects">Мої домашні роботи</h2>
+						<div class="home__hero__projects">
+							<a
+								href="./pages/project-01/page-01.html"
+								class="home__hero__project"
+							>
 								<img
-									src="./pages/projects/work-0-1/images/we-foto.png"
-									alt="project 01"
-									class="image-project"
+									src="./images/all-project.png"
+									alt="project-01"
+									class="home__hero__project__img"
 								/>
-								<h1 class="title-project">Home work 01</h1>
-								<p class="text-project">Д/з №1</p>
-							</article>
-						</a>
-						<a href="./pages/projects/work-1/index.html" class="send-project">
-							<article class="art-project">
+								<h1 class="home__hero__project__title">Home work №1</h1>
+								<p class="home__hero__project__text">Д/з №1</p>
+							</a>
+							<a
+								href="./pages/project-02/page-02.html"
+								class="home__hero__project"
+							>
 								<img
-									src="./images/projects/project02.png"
-									alt="project 02"
-									class="image-project"
+									src="./images/project02.png"
+									alt="project-02"
+									class="home__hero__project__img"
 								/>
-								<h1 class="title-project">Home work 02</h1>
-								<p class="text-project">Д/з №2</p>
-							</article>
-						</a>
-						<a href="./pages/projects/work-1/index.html" class="send-project">
-							<article class="art-project">
+								<h1 class="home__hero__project__title">Home work №2</h1>
+								<p class="home__hero__project__text">Д/з №2</p>
+							</a>
+							<a
+								href="./pages/project-03/page-03.html"
+								class="home__hero__project"
+							>
 								<img
-									src="./images/projects/project02.png"
-									alt="project 02"
-									class="image-project"
+									src="./images/project03.png"
+									alt="project-03"
+									class="home__hero__project__img"
 								/>
-								<h1 class="title-project">Home work 02</h1>
-								<p class="text-project">Д/з №2</p>
-							</article>
-						</a>
+								<h1 class="home__hero__project__title">Home work №3</h1>
+								<p class="home__hero__project__text">Д/з №3</p>
+							</a>
+							<a
+								href="./pages/project-04/page04.html"
+								class="home__hero__project"
+							>
+								<img
+									src="./images/project04.png"
+									alt="project-04"
+									class="home__hero__project__img"
+								/>
+								<h1 class="home__hero__project__title">Home work №4</h1>
+								<p class="home__hero__project__text">Д/з №4</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="home__additionaly">
+				<div class="wrapper">
+					<div class="home__additionaly__wrapper">
+						<h2 id="2">Додаткові дз</h2>
+						<div class="home__additionaly__works">
+							<a
+								href="./pages/project-05/project-05.1/page05.html"
+								class="home__additionaly__works__work"
+							>
+								<img
+									src="./pages/project-05/project-05.1/images/1 1.png"
+									alt="project-01"
+									class="home__additionaly__works__work__img"
+								/>
+								<h1 class="home__additionaly__works__work__title">
+									Additionaly №1
+								</h1>
+								<p class="home__additionaly__works__work__text">Додаткове №1</p>
+							</a>
+							<a
+								href="./pages/project-05/project-05.2/page05-2.html"
+								class="home__additionaly__works__work"
+							>
+								<img
+									src="./images/add-foto/page05-2.png"
+									alt="project-01"
+									class="home__additionaly__works__work__img"
+								/>
+								<h1 class="home__additionaly__works__work__title">
+									Additionaly №2
+								</h1>
+								<p class="home__additionaly__works__work__text">Додаткове №2</p>
+							</a>
+							<a
+								href="./pages/project-05/project-05.3/page05-3.html"
+								class="home__additionaly__works__work"
+							>
+								<img
+									src="./images/add-foto/Tea.png"
+									alt="project-01"
+									class="home__additionaly__works__work__img"
+								/>
+								<h1 class="home__additionaly__works__work__title">
+									Additionaly №3
+								</h1>
+								<p class="home__additionaly__works__work__text">Додаткове №3</p>
+							</a>
+						</div>
 					</div>
 				</div>
 			</section>
 		</main>
+		<footer class="home__footer">
+			<div class="wrapper">
+				<div class="home__footer__wrapper"></div>
+			</div>
+		</footer>
 	</body>
 </html>

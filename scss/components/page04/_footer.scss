@@ -1,0 +1,35 @@
+.page04 {
+	&__footer {
+		background-color: #2f303a;
+		&__wrapper {
+			padding: 60px 0;
+			display: flex;
+			gap: 20px;
+			flex-direction: column;
+		}
+		&__logo {
+			color: #fff;
+			font-size: 26px;
+			font-weight: 700;
+			font-family: "Roboto", sans-serif;
+		}
+		&__logo span {
+			font-weight: 400;
+		}
+		&__menu {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+		&__menu li {
+			color: #ffffff99;
+			font-size: 14px;
+			font-weight: 400;
+			transition: 0.3s;
+			font-family: "Roboto", sans-serif;
+		}
+		&__menu li:hover {
+			color: #fff;
+		}
+	}
+}

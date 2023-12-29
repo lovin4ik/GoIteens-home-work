@@ -1,0 +1,12 @@
+.page02__fish {
+	background-color: var(--colro-dark4-cyan);
+
+	&__wrapper {
+		padding: 40px 0;
+	}
+
+	&__list li {
+		list-style: decimal;
+		color: var(--color-white);
+	}
+}

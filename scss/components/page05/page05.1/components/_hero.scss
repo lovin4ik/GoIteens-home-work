@@ -1,0 +1,37 @@
+.page05-1 {
+	&__hero {
+		margin-bottom: 130px;
+		&__wrapper {
+			display: flex;
+			gap: 65px;
+		}
+		&__title {
+			visibility: hidden;
+			pointer-events: none;
+			position: absolute;
+		}
+		&__art {
+			display: flex;
+			flex-direction: column;
+			gap: 35px;
+			max-width: 420px;
+			h3 {
+				color: #b4ad9e;
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 16px;
+				font-family: "Ubuntu", sans-serif;
+			}
+			&__title {
+				font-size: 30px;
+				font-weight: 400;
+				line-height: 40px;
+			}
+			&__text {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 19px;
+			}
+		}
+	}
+}
