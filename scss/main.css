@@ -330,6 +330,12 @@ table td {
   font-size: 26px;
   font-weight: 700;
 }
+.page04__header__logo > .cyan {
+  font-family: "Oleo-script";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 36px;
+}
 .page04__header__logo span {
   font-weight: 400;
 }
@@ -485,6 +491,9 @@ table td {
   font-weight: 700;
   font-family: "Roboto", sans-serif;
 }
+.page04__footer__logo > .cyan {
+  font-family: "Oleo-script";
+}
 .page04__footer__logo span {
   font-weight: 400;
 }
@@ -504,6 +513,46 @@ table td {
   color: #fff;
 }
 
+.page07 {
+  min-height: 100vh;
+}
+.page07__hero {
+  background-color: var(--color-white);
+  padding: 100px 0;
+}
+.page07__hero > .wrapper > .holder > .list > li:nth-child(2) a {
+  background-color: red;
+}
+.page07__hero > .wrapper > .holder > .list > li:nth-child(3) a {
+  background-color: red;
+}
+.page07__hero > .wrapper > .holder > p:nth-child(3) {
+  font-size: 24px;
+}
+
+.page08__hero > .wrapper > .text-box {
+  padding: 100px 0;
+}
+.page08__hero > .wrapper > .text-box > h3:nth-child(1) {
+  color: pink;
+}
+.page08__hero > .wrapper > .text-box > #greycol {
+  color: grey;
+}
+.page08__hero > .wrapper > .text-box > div:nth-child(5) p {
+  color: red;
+}
+.page08__hero > .wrapper > .text-box > p:nth-child(7) {
+  color: green;
+}
+.page08__hero > .wrapper > .text-box > .yellow {
+  color: yellow;
+}
+
+@font-face {
+  font-family: "Oleo-script";
+  src: url(../../fonts/Oleo_Script/OleoScript-Regular.ttf);
+}
 * {
   padding: 0;
   margin: 0;
@@ -513,7 +562,7 @@ table td {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 .wrapper {

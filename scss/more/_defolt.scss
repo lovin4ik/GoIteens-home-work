@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+	font-family: "Oleo-script";
+	src: url(../../fonts/Oleo_Script/OleoScript-Regular.ttf);
+}
 
 // Шрифти //
 
@@ -11,7 +15,7 @@
 
 a {
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 }
 
 .wrapper {

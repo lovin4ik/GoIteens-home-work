@@ -1,0 +1,20 @@
+.page08__hero {
+	> .wrapper > .text-box {
+		padding: 100px 0;
+		> h3:nth-child(1) {
+			color: pink;
+		}
+		> #greycol {
+			color: grey;
+		}
+		> div:nth-child(5) p {
+			color: red;
+		}
+		> p:nth-child(7) {
+			color: green;
+		}
+		> .yellow {
+			color: yellow;
+		}
+	}
+}

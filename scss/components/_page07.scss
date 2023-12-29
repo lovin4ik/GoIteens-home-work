@@ -1,0 +1,18 @@
+.page07 {
+	min-height: 100vh;
+	&__hero {
+		background-color: var(--color-white);
+		padding: 100px 0;
+		> .wrapper > .holder > .list {
+			> li:nth-child(2) a {
+				background-color: red;
+			}
+			> li:nth-child(3) a {
+				background-color: red;
+			}
+		}
+		> .wrapper > .holder > p:nth-child(3) {
+			font-size: 24px;
+		}
+	}
+}
