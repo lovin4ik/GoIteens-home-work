@@ -530,6 +530,9 @@ table td {
   font-size: 24px;
 }
 
+.page08__hero {
+  background-color: var(--color-white);
+}
 .page08__hero > .wrapper > .text-box {
   padding: 100px 0;
 }
@@ -547,6 +550,29 @@ table td {
 }
 .page08__hero > .wrapper > .text-box > .yellow {
   color: yellow;
+}
+.page08__hero > .wrapper > p {
+  font-size: 24px;
+  transition: 0.5s;
+  position: relative;
+  max-width: 100px;
+}
+.page08__hero > .wrapper > p:nth-child(3)::first-letter {
+  color: var(--color-dark-cyan);
+}
+.page08__hero > .wrapper > p:nth-child(2) {
+  color: var(--color-pink);
+}
+.page08__hero > .wrapper > p:hover {
+  color: var(--color-yellow);
+}
+.page08__hero > .wrapper > p::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  border: 1px solid var(--color-green);
+  width: 100%;
 }
 
 @font-face {
