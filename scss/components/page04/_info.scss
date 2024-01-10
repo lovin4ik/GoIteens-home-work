@@ -2,8 +2,9 @@
 	&__info {
 		margin: 95px 0;
 		&__title {
+			visibility: hidden;
+			pointer-events: none;
 			position: absolute;
-			left: 100000px;
 		}
 		&__menu {
 			display: flex;

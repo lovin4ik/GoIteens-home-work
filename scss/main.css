@@ -386,8 +386,9 @@ table td {
   margin: 95px 0;
 }
 .page04__info__title {
+  visibility: hidden;
+  pointer-events: none;
   position: absolute;
-  left: 100000px;
 }
 .page04__info__menu {
   display: flex;
@@ -706,4 +707,23 @@ body {
   --color-dark4-green: #145d26;
   --color-white: #ededed;
   --color-coffee: #6f4e37;
+}
+
+.off {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+}
+
+.webstudio__modal {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  z-index: 100;
+}
+
+footer,
+header,
+main {
+  z-index: 99;
 }/*# sourceMappingURL=main.css.map */

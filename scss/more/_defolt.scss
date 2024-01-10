@@ -76,3 +76,22 @@ body {
 	--color-white: #ededed;
 	--color-coffee: #6f4e37;
 }
+
+.off {
+	visibility: hidden;
+	pointer-events: none;
+	position: absolute;
+}
+
+.webstudio__modal {
+	width: 100%;
+	min-height: 100vh;
+	background-color: #000;
+	z-index: 100;
+}
+
+footer,
+header,
+main {
+	z-index: 99;
+}
