@@ -355,7 +355,10 @@ table td {
 }
 
 .page04__hero {
-  background-color: #2f303a;
+  background-image: url(/pages/project-04/images/bg-img.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .page04__hero__wrapper {
   padding: 200px 0;
@@ -514,6 +517,87 @@ table td {
   color: #fff;
 }
 
+.main__fortfolio > * {
+  font-family: "Roboto", sans-serif;
+}
+.main__fortfolio__hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+.main__fortfolio__hero__nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.main__fortfolio__hero__nav > li > a {
+  background-color: #f5f4fa;
+  padding: 6px 22px;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 500;
+  color: #212121;
+  border-radius: 4px;
+}
+.main__fortfolio__hero__nav > li > a:hover {
+  background-color: #2196f3;
+  color: #f5f4fa;
+}
+.main__fortfolio__hero__projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-bottom: 95px;
+}
+.main__fortfolio__hero__projects > li > a {
+  max-width: 370px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: 0.3s;
+}
+.main__fortfolio__hero__projects > li > a:hover > div {
+  display: block;
+  height: 295px;
+  transition: 0.3s;
+}
+.main__fortfolio__hero__projects > li > a > div {
+  background-color: rgba(33, 150, 243, 0.8980392157);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  display: none;
+  width: 100%;
+  padding: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.main__fortfolio__hero__projects > li > a > img {
+  max-width: 370px;
+  max-height: 300px;
+}
+.main__fortfolio__hero__projects > li > a > h3 {
+  color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 20px 25px;
+}
+.main__fortfolio__hero__projects > li > a > p {
+  color: #757575;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 0 20px 25px;
+}
+
 .page07 {
   min-height: 100vh;
 }
@@ -667,6 +751,10 @@ li {
 
 body {
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 :root {
@@ -715,15 +803,15 @@ body {
   position: absolute;
 }
 
-.webstudio__modal {
-  width: 100%;
-  min-height: 100vh;
-  background-color: #000;
+header {
   z-index: 100;
 }
 
 footer,
-header,
 main {
   z-index: 99;
+}
+
+.webstudio__active {
+  color: #2196f3;
 }/*# sourceMappingURL=main.css.map */

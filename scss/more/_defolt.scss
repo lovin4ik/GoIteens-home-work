@@ -29,6 +29,10 @@ li {
 
 body {
 	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
 }
 
 :root {
@@ -83,15 +87,15 @@ body {
 	position: absolute;
 }
 
-.webstudio__modal {
-	width: 100%;
-	min-height: 100vh;
-	background-color: #000;
+header {
 	z-index: 100;
 }
 
 footer,
-header,
 main {
 	z-index: 99;
+}
+
+.webstudio__active {
+	color: #2196f3;
 }
