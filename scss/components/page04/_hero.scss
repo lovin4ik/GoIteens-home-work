@@ -1,10 +1,15 @@
 .page04 {
 	&__hero {
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
+		background-color: #2f303a66;
+		position: relative;
+		> img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
 		&__wrapper {
-			padding: 200px 0;
+			padding: 250px 0;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
