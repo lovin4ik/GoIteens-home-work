@@ -357,6 +357,7 @@ table td {
 .page04__hero {
   background-color: rgba(47, 48, 58, 0.4);
   position: relative;
+  z-index: 0;
 }
 .page04__hero > img {
   position: absolute;

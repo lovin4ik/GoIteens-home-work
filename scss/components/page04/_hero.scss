@@ -2,6 +2,7 @@
 	&__hero {
 		background-color: #2f303a66;
 		position: relative;
+		z-index: 0;
 		> img {
 			position: absolute;
 			width: 100%;
