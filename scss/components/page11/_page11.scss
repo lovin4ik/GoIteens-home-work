@@ -1,0 +1,13 @@
+.page11 {
+	padding-bottom: 400px;
+	> .wrapper {
+		> div {
+			width: 350px;
+			height: 220px;
+			padding: 15px 10px 20px;
+			margin: 30px;
+			border: 2px red dotted;
+			background-color: green;
+		}
+	}
+}
