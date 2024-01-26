@@ -26,24 +26,28 @@
 			}
 		</style>
 		<script defer src="../../Js/modal-window-webstudio.js"></script>
+		<script defer src="../../Js/burger-window-weebstudio.js"></script>
 	</head>
 	<body>
 		<header class="page04__header">
 			<div class="wrapper">
 				<div class="page04__header__wrapper">
 					<nav class="page04__header__nav">
+						<a href="../../index.html" class="page04__header__logo"
+							><span class="cyan">Web</span>Studio</a
+						>
 						<ul class="page04__header__menu">
-							<li>
-								<a href="../../index.html" class="page04__header__logo"
-									><span class="cyan">Web</span>Studio</a
-								>
-							</li>
 							<li class="page04__header__item"><a href="/">Студія</a></li>
 							<li class="page04__header__item">
 								<a href="./project-04-11-13/page-04-11.html">Портфоліо</a>
 							</li>
 							<li class="page04__header__item"><a href="/">Контакти</a></li>
 						</ul>
+						<button class="burgerOpen">
+							<div></div>
+							<div></div>
+							<div></div>
+						</button>
 					</nav>
 					<address class="page04__header__address">
 						<a href="mailto:info@devstudio.com" class="page04__header__item"
@@ -204,6 +208,7 @@
 							<img src="./images/fruit-company.svg" alt="svg-logo" />
 							<img src="./images/foster.svg" alt="svg-logo" />
 							<img src="./images/brand.svg" alt="svg-logo" />
+							<img src="./images/tagline.svg" alt="svg-logo" />
 						</div>
 					</div>
 				</div>
@@ -213,9 +218,11 @@
 			<div class="wrapper">
 				<div class="page04__footer__wrapper">
 					<ul class="page04__footer__menu">
-						<a href="/" class="page04__footer__logo" rel="no noo"
-							><span class="cyan">Web</span>Studio</a
-						>
+						<li>
+							<a href="/" class="page04__footer__logo" rel="noferever noopener"
+								><span class="cyan">Web</span>Studio</a
+							>
+						</li>
 						<li>м. Київ, пр-т Лесі Українки, 26</li>
 						<li>info@devstudio.com</li>
 						<li>+38 096 111 11 11</li>
@@ -300,6 +307,38 @@
 					</div>
 					<button type="submit">Відправити</button>
 				</form>
+			</div>
+		</div>
+		<div class="page04__burger off">
+			<div class="page04__burger__menu">
+				<button class="burgerBtn">
+					<img src="./images/close.svg" alt="close" />
+				</button>
+				<nav>
+					<ul>
+						<li><a href="/">Студія</a></li>
+						<li>
+							<a href="./project-04-11-13/page-04-11.html">Портфоліо</a>
+						</li>
+						<li><a href="/">Контакти</a></li>
+					</ul>
+				</nav>
+				<address>
+					<ul class="nav__address">
+						<li>
+							<a href="mailto:info@devstudio.com">info@devstudio.com</a>
+						</li>
+						<li>
+							<a href="tel:+380961111111">+380961111111</a>
+						</li>
+					</ul>
+					<ul class="Link__nav">
+						<li><a href="/">Instagram</a></li>
+						<li><a href="/">Twitter</a></li>
+						<li><a href="/">Facebook</a></li>
+						<li><a href="/">LinkedIn</a></li>
+					</ul>
+				</address>
 			</div>
 		</div>
 	</body>

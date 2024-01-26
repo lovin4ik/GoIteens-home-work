@@ -16,6 +16,9 @@
 			display: flex;
 			gap: 30px;
 			padding-bottom: 95px;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
 			&__work {
 				max-width: 370px;
 				position: relative;

@@ -13,16 +13,30 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			padding: 10px;
 		}
 		&__nav {
 			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
 			padding: 25px 0;
+			align-items: center;
+			width: 100%;
+			> .burgerOpen {
+				display: flex;
+				cursor: pointer;
+				max-width: 24px;
+				gap: 4px;
+				flex-direction: column;
+				background-color: transparent;
+				border: none;
+				max-height: 16px;
+				> div {
+					border: 2px #212121 solid;
+					width: 24px;
+				}
+			}
 		}
 		&__menu {
 			display: flex;
-			flex-wrap: wrap;
 			gap: 50px;
 			align-items: center;
 		}
@@ -54,7 +68,10 @@
 		}
 		&__address {
 			display: flex;
-			gap: 50px;
+			gap: 10px 50px;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
 		}
 		&__address a {
 			font-size: 14px;

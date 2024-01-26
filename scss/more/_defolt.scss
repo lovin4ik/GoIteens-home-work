@@ -220,6 +220,64 @@ main {
 	z-index: 99;
 }
 
-.webstudio__active {
-	color: #2196f3;
+body,
+main,
+section,
+header,
+footer {
+	width: 100%;
+}
+
+.fixed {
+	overflow: hidden;
+}
+
+@media (min-width: 651px) {
+	.burgerOpen {
+		visibility: hidden;
+		pointer-events: none;
+		position: absolute;
+	}
+}
+
+@media (max-width: 768px) {
+	.page04__hero__title {
+		max-width: 360px;
+		font-size: 44px;
+		font-weight: 900;
+	}
+	.page04__footer__menu {
+		> li {
+			text-align: center;
+			padding: 0 15px 0 15px;
+		}
+	}
+	.page04__footer__form {
+		> .inputs {
+			> input {
+				width: 450px;
+			}
+		}
+	}
+	.page04__work {
+		display: none;
+	}
+	.page04__team__puople {
+		max-width: 350px;
+	}
+}
+
+@media (max-width: 650px) {
+	.page04__header__menu,
+	.page04__header__address {
+		display: none;
+	}
+	.page04__header__nav {
+		justify-content: space-between;
+	}
+	.page04__hero__title {
+		max-width: 360px;
+		font-size: 26px;
+		font-weight: 900;
+	}
 }

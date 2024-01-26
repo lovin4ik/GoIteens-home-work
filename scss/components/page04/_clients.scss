@@ -15,6 +15,9 @@
 			display: flex;
 			gap: 30px;
 			padding-bottom: 95px;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
 			> img {
 				border: 1px #afb1b8 solid;
 				border-radius: 4px;

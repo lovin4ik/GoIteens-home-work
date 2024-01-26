@@ -1,0 +1,70 @@
+.page04__burger {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	&__menu {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: left;
+		width: 100%;
+		padding: 40px;
+		height: 800px;
+		> .burgerBtn {
+			position: absolute;
+			background-color: transparent;
+			top: 20px;
+			right: 25px;
+			border: none;
+			width: 20px;
+			height: 20px;
+		}
+		> nav > ul {
+			display: flex;
+			flex-direction: column;
+			gap: 35px;
+			> li > a {
+				font-size: 40px;
+				color: #212121;
+				font-weight: 500;
+			}
+		}
+		> address > .nav__address {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+			padding-bottom: 65px;
+			> li > a {
+				font-size: 24px;
+				font-weight: 500;
+				color: #757575;
+			}
+		}
+		> address > .Link__nav {
+			display: flex;
+			gap: 20px;
+			> li > a {
+				color: #2196f3;
+				font-size: 18px;
+				font-weight: 500;
+				position: relative;
+				&::after {
+					content: "";
+					position: absolute;
+					border: #21212133 1px solid;
+					height: 22px;
+					top: 0;
+					right: -10px;
+				}
+			}
+		}
+	}
+}
