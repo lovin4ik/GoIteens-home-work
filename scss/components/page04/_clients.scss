@@ -1,0 +1,26 @@
+.page04 {
+	&__clients {
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		&__title {
+			color: #212121;
+			font-size: 36px;
+			font-weight: 600;
+			padding: 94px 0 50px 0;
+		}
+		&__companis {
+			display: flex;
+			gap: 30px;
+			padding-bottom: 95px;
+			> img {
+				border: 1px #afb1b8 solid;
+				border-radius: 4px;
+				padding: 16px 32px;
+				cursor: pointer;
+			}
+		}
+	}
+}

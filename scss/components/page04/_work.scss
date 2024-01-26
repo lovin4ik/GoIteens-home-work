@@ -16,6 +16,20 @@
 			display: flex;
 			gap: 30px;
 			padding-bottom: 95px;
+			&__work {
+				max-width: 370px;
+				position: relative;
+				> h3 {
+					position: absolute;
+					bottom: 3px;
+					left: 0;
+					background-color: #2f303acc;
+					color: #fff;
+					padding: 27px 0;
+					width: 100%;
+					text-align: center;
+				}
+			}
 		}
 	}
 }

@@ -5,10 +5,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Home work 04</title>
 		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
 		/>
 		<link rel="stylesheet" href="../../scss/main.css" />
+		<style>
+			.hero-image-bg {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+				background-image: url(./images/bg-img.png);
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+		</style>
+		<script defer src="../../Js/modal-window-webstudio.js"></script>
 	</head>
 	<body>
 		<header class="page04__header">
@@ -41,7 +58,7 @@
 		</header>
 		<main>
 			<section class="page04__hero">
-				<img src="./images/bg-img.png" alt="bg" />
+				<div class="hero-image-bg"></div>
 				<div class="wrapper">
 					<div class="page04__hero__wrapper">
 						<h1 class="page04__hero__title">
@@ -57,6 +74,9 @@
 						<h2 class="page04__info__title">DETALS</h2>
 						<ul class="page04__info__menu">
 							<li>
+								<div>
+									<img src="./images/antenna.svg" alt="detals-info-foto" />
+								</div>
 								<h3>УВАГА ДО ДЕТАЛЕЙ</h3>
 								<p>
 									Ідейні міркування, і навіть початок повсякденної роботи з
@@ -64,6 +84,9 @@
 								</p>
 							</li>
 							<li>
+								<div>
+									<img src="./images/clock.svg" alt="detals-info-foto" />
+								</div>
 								<h3>ПУНКТУАЛЬНІСТЬ</h3>
 								<p>
 									Так само консультація з широким активом значною мірою
@@ -71,6 +94,9 @@
 								</p>
 							</li>
 							<li>
+								<div>
+									<img src="./images/desktop.svg" alt="detals-info-foto" />
+								</div>
 								<h3>ПЛАНУВАННЯ</h3>
 								<p>
 									Так само консультація з широким активом значною мірою
@@ -78,6 +104,9 @@
 								</p>
 							</li>
 							<li>
+								<div>
+									<img src="./images/astronaut.svg" alt="detals-info-foto" />
+								</div>
 								<h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
 								<p>
 									Значимість цих проблем настільки очевидна, що реалізація
@@ -93,13 +122,21 @@
 					<div class="page04__work__wrapper">
 						<h1 class="page04__work__title">Чим ми займаємося</h1>
 						<div class="page04__work__works">
-							<img
-								src="../project-04/images/programing.jpg"
-								alt="programing"
-							/><img src="./images/notebook.png" alt="notebook" /><img
-								src="./images/tablet.png"
-								alt="tablet"
-							/>
+							<div class="page04__work__works__work">
+								<img
+									src="../project-04/images/programing.jpg"
+									alt="programing"
+								/>
+								<h3>Десктопні додатки</h3>
+							</div>
+							<div class="page04__work__works__work">
+								<img src="./images/notebook.png" alt="notebook" />
+								<h3>Мобільні додатки</h3>
+							</div>
+							<div class="page04__work__works__work">
+								<img src="./images/tablet.png" alt="tablet" />
+								<h3>Дизайнерські рішення</h3>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -113,22 +150,60 @@
 								<img src="./images/men-1.jpg" alt="man-1" />
 								<h3>Ігор Дем'яненко</h3>
 								<p>Product Designer</p>
+								<div>
+									<i class="bx bxl-instagram"></i>
+									<i class="bx bxl-twitter"></i>
+									<i class="bx bxl-facebook"></i>
+									<i class="bx bxl-linkedin"></i>
+								</div>
 							</div>
 							<div class="page04__team__puople">
 								<img src="./images/woomen-1.jpg" alt="woomen" />
 								<h3>Ольга Рєпіна</h3>
 								<p>Frontend Developer</p>
+								<div>
+									<i class="bx bxl-instagram"></i>
+									<i class="bx bxl-twitter"></i>
+									<i class="bx bxl-facebook"></i>
+									<i class="bx bxl-linkedin"></i>
+								</div>
 							</div>
 							<div class="page04__team__puople">
 								<img src="./images/man-2.jpg" alt="man-2" />
 								<h3>Микола Тарасов</h3>
 								<p>Marketing</p>
+								<div>
+									<i class="bx bxl-instagram"></i>
+									<i class="bx bxl-twitter"></i>
+									<i class="bx bxl-facebook"></i>
+									<i class="bx bxl-linkedin"></i>
+								</div>
 							</div>
 							<div class="page04__team__puople">
 								<img src="./images/man-3.jpg" alt="man-3" />
 								<h3>Михайло Єрмаков</h3>
 								<p>UI Designer</p>
+								<div>
+									<i class="bx bxl-instagram"></i>
+									<i class="bx bxl-twitter"></i>
+									<i class="bx bxl-facebook"></i>
+									<i class="bx bxl-linkedin"></i>
+								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page04__clients">
+				<div class="wrapper">
+					<div class="page04__clients__wrapper">
+						<h2 class="page04__clients__title">Постійні клієнти</h2>
+						<div class="page04__clients__companis">
+							<img src="./images/yago.svg" alt="svg-logo" />
+							<img src="./images/company.svg" alt="svg-logo" />
+							<img src="./images/fruit-company.svg" alt="svg-logo" />
+							<img src="./images/foster.svg" alt="svg-logo" />
+							<img src="./images/brand.svg" alt="svg-logo" />
 						</div>
 					</div>
 				</div>
@@ -137,16 +212,95 @@
 		<footer class="page04__footer">
 			<div class="wrapper">
 				<div class="page04__footer__wrapper">
-					<a href="/" class="page04__footer__logo" rel="no noo"
-						><span class="cyan">Web</span>Studio</a
-					>
 					<ul class="page04__footer__menu">
+						<a href="/" class="page04__footer__logo" rel="no noo"
+							><span class="cyan">Web</span>Studio</a
+						>
 						<li>м. Київ, пр-т Лесі Українки, 26</li>
 						<li>info@devstudio.com</li>
 						<li>+38 096 111 11 11</li>
 					</ul>
+					<div class="page04__footer__join">
+						<p>приєднуйтесь</p>
+						<ul class="page04__footer__joins">
+							<li>
+								<a href="/"> <i class="bx bxl-instagram"></i></a>
+							</li>
+							<li>
+								<a href="/"> <i class="bx bxl-twitter"></i></a>
+							</li>
+							<li>
+								<a href="/"> <i class="bx bxl-facebook"></i></a>
+							</li>
+							<li>
+								<a href="/"> <i class="bx bxl-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+					<form action="../../index.html" class="page04__footer__form">
+						<p>Підпишіться на розсилку</p>
+						<div class="inputs">
+							<input type="email" placeholder="E-mail" />
+							<button type="submit">
+								<p>Підписатися</p>
+								<i class="bx bxl-telegram"></i>
+							</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</footer>
+		<div class="page04__modal off">
+			<div class="page04__modal__window">
+				<button class="close">
+					<img src="./images/close.svg" alt="foto" />
+				</button>
+				<h2 class="page04__modal__window__title">
+					Залиште свої дані, ми вам передзвонимо
+				</h2>
+				<form action="../../index.html">
+					<div class="inputs">
+						<!--  -->
+						<div>
+							<label for="name">Ім'я</label>
+							<div class="input">
+								<i class="bx bx-user"></i>
+								<input type="text" name="name" />
+							</div>
+						</div>
+						<!--  -->
+						<div>
+							<label for="tel">Телефон</label>
+							<div class="input">
+								<i class="bx bx-phone"></i>
+								<input type="tel" name="tel" />
+							</div>
+						</div>
+						<!--  -->
+						<div>
+							<label for="email">Пошта</label>
+							<div class="input">
+								<i class="bx bxs-envelope"></i>
+								<input type="email" name="email" />
+							</div>
+						</div>
+						<!--  -->
+						<div>
+							<label for="text">Коментар</label>
+							<textarea placeholder="Введіть текст" name="text"></textarea>
+						</div>
+					</div>
+					<!--  -->
+					<div class="checkbox">
+						<input type="checkbox" />
+						<p>
+							Погоджуюся з розсилкою та приймаю
+							<a href="../../index.html">Умови договору</a>
+						</p>
+					</div>
+					<button type="submit">Відправити</button>
+				</form>
+			</div>
+		</div>
 	</body>
 </html>

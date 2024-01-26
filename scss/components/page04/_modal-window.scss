@@ -1,0 +1,132 @@
+.page04 {
+	&__modal {
+		min-height: 100vh;
+		width: 100%;
+		background-color: #00000033;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		position: fixed;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&__window {
+			background-color: #fff;
+			box-shadow: 0px 2px 1px 0px #00000033;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			border-radius: 4px;
+			> .close {
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				border-radius: 50%;
+				border: 1px solid #0000001a;
+				width: 30px;
+				height: 30px;
+				background-color: transparent;
+				cursor: pointer;
+			}
+			> form {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				padding: 0 40px 40px 40px;
+				gap: 20px;
+				> .inputs {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					gap: 10px;
+					> div {
+						display: flex;
+						flex-direction: column;
+						position: relative;
+						> label {
+							color: #757575;
+							font-size: 12px;
+							font-weight: 400;
+						}
+						> .input {
+							display: flex;
+							align-items: center;
+							> input {
+								width: 448px;
+								background-color: transparent;
+								border: solid 1px #21212133;
+								border-radius: 4px;
+								padding: 10px 0 10px 40px;
+								outline: none;
+								&:focus {
+									border: solid 1px #2196f3;
+								}
+							}
+							> i {
+								position: absolute;
+								font-size: 18px;
+								left: 10px;
+								color: #212121;
+							}
+						}
+						> textarea {
+							resize: none;
+							width: 448px;
+							border: solid 1px #21212133;
+							height: 135px;
+							padding: 15px;
+							outline: none;
+							&:focus {
+								border: solid 1px #2196f3;
+							}
+						}
+					}
+				}
+				> .checkbox {
+					display: flex;
+					gap: 10px;
+					align-items: center;
+					> input {
+						border: 1px solid #212121;
+						&:checked {
+							background-color: #2196f3;
+							color: #fff;
+							border: none;
+						}
+					}
+					> p {
+						color: #757575;
+						font-size: 14px;
+						font-weight: 400;
+						> a {
+							text-decoration: underline;
+							color: #2196f3;
+						}
+					}
+				}
+				> button {
+					background-color: #188ce8;
+					color: #fff;
+					padding: 10px 50px;
+					font-size: 16px;
+					font-weight: 700;
+					border: none;
+					border-radius: 4px;
+				}
+			}
+			&__title {
+				padding: 40px 40px 10px 40px;
+				color: #212121;
+				text-align: center;
+				font-size: 20px;
+				max-width: 370px;
+				font-weight: 700;
+			}
+		}
+	}
+}

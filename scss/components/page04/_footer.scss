@@ -4,20 +4,15 @@
 		&__wrapper {
 			padding: 60px 0;
 			display: flex;
-			gap: 20px;
-			flex-direction: column;
+			gap: 70px;
+			flex-direction: row;
 		}
 		&__logo {
 			color: #fff;
 			font-size: 26px;
 			font-weight: 700;
 			font-family: "Roboto", sans-serif;
-			> .cyan {
-				font-family: "Oleo-script";
-			}
-		}
-		&__logo span {
-			font-weight: 400;
+			padding-bottom: 20px;
 		}
 		&__menu {
 			display: flex;
@@ -33,6 +28,70 @@
 		}
 		&__menu li:hover {
 			color: #fff;
+		}
+		&__join {
+			> p {
+				color: #fff;
+				font-size: 14px;
+				font-weight: 700;
+				padding-bottom: 20px;
+			}
+			> ul {
+				display: flex;
+				gap: 10px;
+				> li {
+					border-radius: 50%;
+					background-color: #ffffff1a;
+					padding: 10px;
+					transition: 0.3s;
+					> a > i {
+						font-size: 20px;
+						color: #fff;
+					}
+					&:hover {
+						background-color: #2196f3;
+					}
+				}
+			}
+		}
+		&__form {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			> p {
+				font-size: 700;
+				font-weight: 14px;
+				color: #fff;
+			}
+			> .inputs {
+				display: flex;
+				gap: 10px;
+				> input {
+					border: 1px solid #ffffff4d;
+					padding: 15px 0 15px 15px;
+					background-color: transparent;
+					border-radius: 4px;
+					width: 360px;
+					outline: none;
+					color: #fff;
+					&::placeholder {
+						color: #ffffff4d;
+					}
+				}
+				> button {
+					display: flex;
+					gap: 10px;
+					background-color: #2196f3;
+					border-radius: 4px;
+					padding: 10px 20px;
+					border: none;
+					color: #fff;
+					align-items: center;
+					font-size: 16px;
+					font-weight: 700;
+					cursor: pointer;
+				}
+			}
 		}
 	}
 }

@@ -2,12 +2,6 @@
 	&__hero {
 		background-color: #2f303a66;
 		position: relative;
-		> img {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			z-index: -1;
-		}
 		&__wrapper {
 			padding: 250px 0;
 			display: flex;
