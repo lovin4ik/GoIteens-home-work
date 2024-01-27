@@ -327,12 +327,25 @@ table td {
   gap: 50px;
   align-items: center;
 }
-.page04__header__item a {
+.page04__header__item > a {
   color: #000;
   font-size: 14px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   transition: 0.3s;
+}
+.page04__header__item .webstudio__active {
+  color: #2196f3;
+  position: relative;
+}
+.page04__header__item .webstudio__active::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -44px;
+  left: 0;
+  border: #2196f3 solid 2px;
+  border-radius: 2px;
 }
 .page04__header__item a:hover {
   color: #2196f3;
@@ -355,10 +368,10 @@ table td {
 }
 .page04__header__address {
   display: flex;
-  gap: 10px 50px;
+  gap: 30px;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .page04__header__address a {
   font-size: 14px;
@@ -698,6 +711,7 @@ table td {
 .page04__modal__window > form > .inputs > div {
   display: flex;
   flex-direction: column;
+  gap: 5px;
   position: relative;
 }
 .page04__modal__window > form > .inputs > div > label {
@@ -709,6 +723,16 @@ table td {
   display: flex;
   align-items: center;
 }
+.page04__modal__window > form > .inputs > div > .input > i {
+  position: absolute;
+  font-size: 18px;
+  left: 10px;
+  color: #212121;
+}
+.page04__modal__window > form > .inputs > div > .input > #input__window:focus {
+  border: 1px solid #2196f3;
+  color: #212121;
+}
 .page04__modal__window > form > .inputs > div > .input > input {
   width: 448px;
   background-color: transparent;
@@ -716,15 +740,6 @@ table td {
   border-radius: 4px;
   padding: 10px 0 10px 40px;
   outline: none;
-}
-.page04__modal__window > form > .inputs > div > .input > input:focus {
-  border: solid 1px #2196f3;
-}
-.page04__modal__window > form > .inputs > div > .input > i {
-  position: absolute;
-  font-size: 18px;
-  left: 10px;
-  color: #212121;
 }
 .page04__modal__window > form > .inputs > div > textarea {
   resize: none;
@@ -744,11 +759,6 @@ table td {
 }
 .page04__modal__window > form > .checkbox > input {
   border: 1px solid #212121;
-}
-.page04__modal__window > form > .checkbox > input:checked {
-  background-color: #2196f3;
-  color: #fff;
-  border: none;
 }
 .page04__modal__window > form > .checkbox > p {
   color: #757575;
@@ -897,6 +907,10 @@ table td {
   display: flex;
   flex-direction: row;
   gap: 10px;
+}
+.main__fortfolio__hero__nav > li > .webstudio__active__btn {
+  background-color: #2196f3;
+  color: #f5f4fa;
 }
 .main__fortfolio__hero__nav > li > a {
   background-color: #f5f4fa;
@@ -1356,6 +1370,10 @@ footer {
   }
   .page04__team__puople {
     max-width: 350px;
+  }
+  .page04__header__address {
+    gap: 10px;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 650px) {

@@ -47,6 +47,7 @@
 					> div {
 						display: flex;
 						flex-direction: column;
+						gap: 5px;
 						position: relative;
 						> label {
 							color: #757575;
@@ -56,6 +57,16 @@
 						> .input {
 							display: flex;
 							align-items: center;
+							> i {
+								position: absolute;
+								font-size: 18px;
+								left: 10px;
+								color: #212121;
+							}
+							> #input__window:focus {
+								border: 1px solid #2196f3;
+								color: #212121;
+							}
 							> input {
 								width: 448px;
 								background-color: transparent;
@@ -63,15 +74,6 @@
 								border-radius: 4px;
 								padding: 10px 0 10px 40px;
 								outline: none;
-								&:focus {
-									border: solid 1px #2196f3;
-								}
-							}
-							> i {
-								position: absolute;
-								font-size: 18px;
-								left: 10px;
-								color: #212121;
 							}
 						}
 						> textarea {
@@ -93,11 +95,6 @@
 					align-items: center;
 					> input {
 						border: 1px solid #212121;
-						&:checked {
-							background-color: #2196f3;
-							color: #fff;
-							border: none;
-						}
 					}
 					> p {
 						color: #757575;

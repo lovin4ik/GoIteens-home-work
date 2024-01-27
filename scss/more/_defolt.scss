@@ -265,6 +265,10 @@ footer {
 	.page04__team__puople {
 		max-width: 350px;
 	}
+	.page04__header__address {
+		gap: 10px;
+		flex-wrap: wrap;
+	}
 }
 
 @media (max-width: 650px) {

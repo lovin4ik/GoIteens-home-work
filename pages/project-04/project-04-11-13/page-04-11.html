@@ -4,6 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>WebStudio Portfolio</title>
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="../../../scss/main.css	" />
 	</head>
 	<body class="webstudio">
@@ -18,8 +22,8 @@
 								>
 							</li>
 							<li class="page04__header__item"><a href="/">Студія</a></li>
-							<li class="page04__header__item webstudio__active">
-								<a href="/">Портфоліо</a>
+							<li class="page04__header__item">
+								<a href="/" class="webstudio__active">Портфоліо</a>
 							</li>
 							<li class="page04__header__item"><a href="/">Контакти</a></li>
 						</ul>
@@ -41,7 +45,7 @@
 				<div class="wrapper">
 					<div class="main__fortfolio__hero__wrapper">
 						<ul class="main__fortfolio__hero__nav">
-							<li><a href="/">Усі</a></li>
+							<li><a href="/" class="webstudio__active__btn">Усі</a></li>
 							<li><a href="/">Веб-сайти</a></li>
 							<li><a href="/">Додатки</a></li>
 							<li><a href="/">Дизайн</a></li>
@@ -164,14 +168,43 @@
 		<footer class="page04__footer">
 			<div class="wrapper">
 				<div class="page04__footer__wrapper">
-					<a href="/" class="page04__footer__logo" rel="no noo"
-						><span class="cyan">Web</span>Studio</a
-					>
 					<ul class="page04__footer__menu">
+						<li>
+							<a href="/" class="page04__footer__logo" rel="noferever noopener"
+								><span class="cyan">Web</span>Studio</a
+							>
+						</li>
 						<li>м. Київ, пр-т Лесі Українки, 26</li>
 						<li>info@devstudio.com</li>
 						<li>+38 096 111 11 11</li>
 					</ul>
+					<div class="page04__footer__join">
+						<p>приєднуйтесь</p>
+						<ul class="page04__footer__joins">
+							<li>
+								<a href="/"> <i class="bx bxl-instagram"></i></a>
+							</li>
+							<li>
+								<a href="/"> <i class="bx bxl-twitter"></i></a>
+							</li>
+							<li>
+								<a href="/"> <i class="bx bxl-facebook"></i></a>
+							</li>
+							<li>
+								<a href="/"> <i class="bx bxl-linkedin"></i></a>
+							</li>
+						</ul>
+					</div>
+					<form action="../../index.html" class="page04__footer__form">
+						<p>Підпишіться на розсилку</p>
+						<div class="inputs">
+							<input type="email" placeholder="E-mail" />
+							<button type="submit">
+								<p>Підписатися</p>
+								<i class="bx bxl-telegram"></i>
+							</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</footer>

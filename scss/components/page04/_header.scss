@@ -40,12 +40,27 @@
 			gap: 50px;
 			align-items: center;
 		}
-		&__item a {
-			color: #000;
-			font-size: 14px;
-			font-weight: 500;
-			font-family: "Roboto", sans-serif;
-			transition: 0.3s;
+		&__item {
+			> a {
+				color: #000;
+				font-size: 14px;
+				font-weight: 500;
+				font-family: "Roboto", sans-serif;
+				transition: 0.3s;
+			}
+			.webstudio__active {
+				color: #2196f3;
+				position: relative;
+				&::after {
+					content: "";
+					width: 100%;
+					position: absolute;
+					bottom: -44px;
+					left: 0;
+					border: #2196f3 solid 2px;
+					border-radius: 2px;
+				}
+			}
 		}
 		&__item a:hover {
 			color: #2196f3;
@@ -68,10 +83,10 @@
 		}
 		&__address {
 			display: flex;
-			gap: 10px 50px;
+			gap: 30px;
+			flex-direction: row;
 			align-items: center;
 			justify-content: center;
-			flex-wrap: wrap;
 		}
 		&__address a {
 			font-size: 14px;
