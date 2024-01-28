@@ -1,0 +1,64 @@
+.page16 {
+	> main > section {
+		min-height: 100vh;
+		background-color: #29700a;
+		position: relative;
+		z-index: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&::before {
+			content: "";
+			z-index: 1;
+			bottom: 0;
+			left: 0;
+			position: absolute;
+			width: 100%;
+			height: 200px;
+			background-size: contain;
+			background-repeat: repeat;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100px;
+			background-size: contain;
+			background-repeat: repeat;
+		}
+		> .bg-box {
+			background-size: 450px 300px;
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 100%;
+			min-height: 100vh;
+			position: relative;
+			&::after {
+				content: "";
+				background-color: red;
+				height: 100%;
+				width: 70px;
+				background-repeat: repeat;
+				background-size: contain;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: transparent;
+			}
+			&::before {
+				content: "";
+				background-color: red;
+				height: 100%;
+				width: 70px;
+				background-repeat: repeat;
+				background-size: contain;
+				position: absolute;
+				top: 0;
+				right: 0;
+				background-color: transparent;
+			}
+		}
+	}
+}
