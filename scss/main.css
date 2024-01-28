@@ -1115,6 +1115,56 @@ table td {
   background-color: green;
 }
 
+.page15 > main > section > .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page15 > main > section > .wrapper > .holder {
+  border: 1px solid #212121;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-shrink: 1;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  width: 300px;
+  margin-bottom: 400px;
+}
+.page15 > main > section > .wrapper > .holder > .item {
+  text-align: center;
+  flex-basis: 25%;
+  flex-shrink: 1;
+  flex-grow: 1;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page15 > main > section > .wrapper > .holder > .item:nth-child(1) {
+  background-color: #fd644d;
+  order: 1;
+  flex-basis: 50%;
+  border-radius: 10px 0 0 0;
+}
+.page15 > main > section > .wrapper > .holder > .item:nth-child(2) {
+  background-color: #4983b2;
+  order: 4;
+}
+.page15 > main > section > .wrapper > .holder > .item:nth-child(3) {
+  background-color: #663797;
+  order: 3;
+}
+.page15 > main > section > .wrapper > .holder > .item:nth-child(4) {
+  background-color: #0e7f12;
+  order: 5;
+}
+.page15 > main > section > .wrapper > .holder > .item:nth-child(5) {
+  background-color: #fda429;
+  order: 2;
+  flex-basis: 50%;
+  border-radius: 0 10px 0 0;
+}
+
 @font-face {
   font-family: "Oleo-script";
   src: url(../../fonts/Oleo_Script/OleoScript-Regular.ttf);
