@@ -44,9 +44,9 @@
 				position: relative;
 				transition: 0.3s;
 				&:hover > div {
-					display: block;
 					height: 295px;
 					transition: 0.3s;
+					transform: scaleY(1);
 				}
 				> div {
 					background-color: #2196f3e5;
@@ -54,13 +54,16 @@
 					top: 0;
 					left: 0;
 					height: 1px;
-					display: none;
+					display: flex;
+					justify-content: center;
+					align-items: center;
 					width: 100%;
 					padding: 24px;
 					color: #ffffff;
 					font-weight: 400;
 					font-size: 18px;
 					pointer-events: none;
+					transform: scaleY(0);
 					transition: 0.3s;
 				}
 				> img {

@@ -941,9 +941,9 @@ table td {
   transition: 0.3s;
 }
 .main__fortfolio__hero__projects > li > a:hover > div {
-  display: block;
   height: 295px;
   transition: 0.3s;
+  transform: scaleY(1);
 }
 .main__fortfolio__hero__projects > li > a > div {
   background-color: rgba(33, 150, 243, 0.8980392157);
@@ -951,13 +951,16 @@ table td {
   top: 0;
   left: 0;
   height: 1px;
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 24px;
   color: #ffffff;
   font-weight: 400;
   font-size: 18px;
   pointer-events: none;
+  transform: scaleY(0);
   transition: 0.3s;
 }
 .main__fortfolio__hero__projects > li > a > img {
