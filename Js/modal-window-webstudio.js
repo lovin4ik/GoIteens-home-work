@@ -1,12 +1,15 @@
-var body = document.querySelector('body');
-var modalWindow = document.querySelector('.page04__modal');
+var modal = document.querySelector('.page04__modal');
+var modalWindow = document.querySelector('.page04__modal__window');
 var BtnOpen = document.querySelector('.page04__hero__btn');
 var Btnclose = document.querySelector('.close');
 
 var toggle = () => {
-	modalWindow.classList.toggle('off');
-	body.classList.toggle('fixed');
+	modal.classList.toggle('off');
 };
 
+modalWindow.addEventListener('click', (e) => {
+	e.stopPropagation();
+});
+modal.addEventListener('click', toggle);
 BtnOpen.addEventListener('click', toggle);
 Btnclose.addEventListener('click', toggle);
