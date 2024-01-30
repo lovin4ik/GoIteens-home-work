@@ -307,6 +307,7 @@ table td {
   padding: 25px 0;
   align-items: center;
   width: 100%;
+  gap: 50px;
 }
 .page04__header__nav > .burgerOpen {
   display: flex;
@@ -408,9 +409,15 @@ table td {
   background-color: #2196f3;
   color: #fff;
   border-radius: 4px;
-  padding: 10px 30px;
+  padding: 12px 32px;
   border: none;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.page04__hero__btn:hover {
+  background-color: #269dff;
 }
 
 .page04__info {
