@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "clean-css": "^5.3.3",
     "sass": "^1.70.0",
     "scss": "^0.2.4"
   }
