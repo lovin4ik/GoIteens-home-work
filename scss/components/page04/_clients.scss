@@ -18,11 +18,21 @@
 			flex-wrap: wrap;
 			justify-content: center;
 			align-items: center;
-			> img {
+			> a  {
 				border: 1px #afb1b8 solid;
 				border-radius: 4px;
 				padding: 16px 32px;
 				cursor: pointer;
+				transition: 0.4s;
+				> svg path {
+					transition: 0.4s;
+				}
+				&:hover {
+					border: 1px #2196f3 solid;
+					> svg path {
+						fill: #2196f3;
+					}
+				}
 			}
 		}
 	}

@@ -14,9 +14,12 @@
 			color: #ffffff;
 			font-size: 44px;
 			font-weight: 900;
+			line-height: 60px;
+			letter-spacing: 6px;
 			font-family: "Roboto", sans-serif;
 			max-width: 700px;
 			text-align: center;
+			text-transform: uppercase;
 		}
 		&__btn {
 			background-color: #2196f3;
@@ -28,6 +31,7 @@
 			font-size: 16px;
 			font-weight: 700;
 			transition: 0.3s;
+			letter-spacing: 2px;
 			&:hover {
 				background-color: #269dff;
 			}

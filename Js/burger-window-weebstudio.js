@@ -6,6 +6,7 @@ var Btnclose = document.querySelector('.burgerBtn');
 var toggle = () => {
 	burgerWindow.classList.toggle('off');
 	body.classList.toggle('fixed');
+	burgerWindow.classList.toggle('burger__on')
 };
 
 BtnOpen.addEventListener('click', toggle);

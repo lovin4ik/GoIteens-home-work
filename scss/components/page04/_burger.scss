@@ -9,12 +9,12 @@
 	justify-content: center;
 	align-items: center;
 	background-color: #fff;
+	transform: scale(0);
 	&__menu {
 		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		align-items: left;
 		width: 100%;
 		padding: 40px;
 		height: 800px;
@@ -67,4 +67,8 @@
 			}
 		}
 	}
+}
+.burger__on {
+	transition: 0.3s;
+	transform: scale(1);
 }

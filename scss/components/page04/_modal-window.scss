@@ -20,6 +20,8 @@
 			justify-content: center;
 			position: relative;
 			border-radius: 4px;
+			transform: scale(0);
+			transition: 0.2ss;
 			> .close {
 				position: absolute;
 				top: 10px;
@@ -53,19 +55,26 @@
 							color: #757575;
 							font-size: 12px;
 							font-weight: 400;
-						}
-						> .input {
 							display: flex;
-							align-items: center;
+							flex-direction: column;
+							position: relative;
+							align-content: center;
+							justify-content: center;
+							&:hover {
+								> input {
+									border: 1px solid #2196f3;
+								}
+								> i {
+									color: #2196f3;
+								}
+							}
 							> i {
 								position: absolute;
 								font-size: 18px;
 								left: 10px;
+								bottom: 10px;
 								color: #212121;
-							}
-							> #input__window:focus {
-								border: 1px solid #2196f3;
-								color: #212121;
+								transition: 0.4s;
 							}
 							> input {
 								width: 448px;
@@ -74,9 +83,12 @@
 								border-radius: 4px;
 								padding: 10px 0 10px 40px;
 								outline: none;
+								color: #000;
+								margin-top: 5px;
+								transition: 0.4s;
 							}
 						}
-						> textarea {
+						> label > textarea {
 							resize: none;
 							width: 448px;
 							border: solid 1px #21212133;
@@ -126,4 +138,9 @@
 			}
 		}
 	}
+}
+
+.modal__on {
+	transform: scale(1);
+	transition: 0.2s;
 }

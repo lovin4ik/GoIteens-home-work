@@ -5,6 +5,7 @@ var Btnclose = document.querySelector('.close');
 
 var toggle = () => {
 	modal.classList.toggle('off');
+	modalWindow.classList.toggle('modal__on')
 };
 
 modalWindow.addEventListener('click', (e) => {
