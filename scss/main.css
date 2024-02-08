@@ -603,14 +603,14 @@ table td {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 0;
   min-height: 100%;
   z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  transform: scale(0);
+  transition: 0.6s ease-in-out;
 }
 .page04__burger__menu {
   position: relative;
@@ -620,6 +620,7 @@ table td {
   width: 100%;
   padding: 40px;
   height: 800px;
+  transition: 0.6s ease-in;
 }
 .page04__burger__menu > .burgerBtn {
   position: absolute;
@@ -630,6 +631,9 @@ table td {
   width: 20px;
   height: 20px;
 }
+.page04__burger__menu > nav {
+  height: 650px;
+}
 .page04__burger__menu > nav > ul {
   display: flex;
   flex-direction: column;
@@ -639,6 +643,10 @@ table td {
   font-size: 40px;
   color: #212121;
   font-weight: 500;
+}
+.page04__burger__menu > address {
+  height: 220px;
+  width: 100%;
 }
 .page04__burger__menu > address > .nav__address {
   display: flex;
@@ -671,8 +679,27 @@ table td {
 }
 
 .burger__on {
-  transition: 0.3s;
-  transform: scale(1);
+  transition: 0.6s ease-in-out;
+  width: 100%;
+}
+
+.burgerBtn {
+  overflow: auto;
+}
+
+.page04__burger__menu {
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.page04__burger__menu nav {
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+}
+
+.page04__burger__menu address {
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
 }
 
 .page04__clients__wrapper {
@@ -739,7 +766,7 @@ table td {
   position: relative;
   border-radius: 4px;
   transform: scale(0);
-  transition: 0.2ss;
+  transition: 0.3s ease-in-out;
   max-width: 530px;
 }
 .page04__modal__window > .close {
@@ -776,6 +803,7 @@ table td {
 }
 .page04__modal__window > form > .inputs > div > label {
   color: #757575;
+  width: 450px;
   font-size: 12px;
   font-weight: 400;
   display: flex;
@@ -799,7 +827,7 @@ table td {
   transition: 0.4s;
 }
 .page04__modal__window > form > .inputs > div > label > input {
-  width: 448px;
+  width: 100%;
   background-color: transparent;
   border: solid 1px rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -811,7 +839,7 @@ table td {
 }
 .page04__modal__window > form > .inputs > div > label > textarea {
   resize: none;
-  width: 448px;
+  width: 100%;
   border: solid 1px rgba(33, 33, 33, 0.2);
   height: 135px;
   padding: 15px;
@@ -830,7 +858,7 @@ table td {
 }
 .page04__modal__window > form > .checkbox > p {
   color: #757575;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
 }
 .page04__modal__window > form > .checkbox > p > a {
@@ -857,12 +885,15 @@ table td {
 
 .modal__on {
   transform: scale(1);
-  transition: 0.2s;
+  transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
   .page04__modal__window {
     max-width: 450px;
+  }
+  .page04__modal__window > form > .inputs > div > label {
+    width: 370px;
   }
 }
 .page04__footer {
@@ -1518,6 +1549,7 @@ body {
   visibility: hidden;
   pointer-events: none;
   position: absolute;
+  transition: 0.4s ease-in-out;
 }
 
 header {

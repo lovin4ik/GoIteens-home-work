@@ -21,7 +21,7 @@
 			position: relative;
 			border-radius: 4px;
 			transform: scale(0);
-			transition: 0.2ss;
+			transition: 0.3s ease-in-out;
 			max-width: 530px;
 			> .close {
 				position: absolute;
@@ -54,6 +54,7 @@
 						position: relative;
 						> label {
 							color: #757575;
+							width: 450px;
 							font-size: 12px;
 							font-weight: 400;
 							display: flex;
@@ -78,7 +79,7 @@
 								transition: 0.4s;
 							}
 							> input {
-								width: 448px;
+								width: 100%;
 								background-color: transparent;
 								border: solid 1px #21212133;
 								border-radius: 4px;
@@ -91,7 +92,7 @@
 						}
 						> label > textarea {
 							resize: none;
-							width: 448px;
+							width: 100%;
 							border: solid 1px #21212133;
 							height: 135px;
 							padding: 15px;
@@ -111,7 +112,7 @@
 					}
 					> p {
 						color: #757575;
-						font-size: 14px;
+						font-size: 13px;
 						font-weight: 400;
 						> a {
 							text-decoration: underline;
@@ -143,11 +144,20 @@
 
 .modal__on {
 	transform: scale(1);
-	transition: 0.2s;
+	transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
 	.page04__modal__window {
 		max-width: 450px;
+		> form {
+			> .inputs{
+				> div {
+					> label {
+						width: 370px;
+					}
+				}
+			}
+		}
 	}
 }

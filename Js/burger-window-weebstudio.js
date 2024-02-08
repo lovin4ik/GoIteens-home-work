@@ -1,13 +1,22 @@
-var body = document.querySelector('body');
-var burgerWindow = document.querySelector('.page04__burger');
-var BtnOpen = document.querySelector('.burgerOpen');
-var Btnclose = document.querySelector('.burgerBtn');
+document.addEventListener('DOMContentLoaded', function() {
+	const burger = document.querySelector('.page04__burger');
+	const BtnOpen = document.querySelector('.burgerOpen');
+	const Btnclose = document.querySelector('.burgerBtn');
+	const burgerWindow = document.querySelector('.page04__burger__menu')
+	const body = document.querySelector('body')
+	BtnOpen.addEventListener('click', () => {
+		burger.classList.add('burger__on')
+		burger.classList.remove('off')
+		burgerWindow.classList.add('burger__on')
+		burgerWindow.classList.remove('off')
+		body.classList.add('fixed')
+	})
 
-var toggle = () => {
-	burgerWindow.classList.toggle('off');
-	body.classList.toggle('fixed');
-	burgerWindow.classList.toggle('burger__on')
-};
-
-BtnOpen.addEventListener('click', toggle);
-Btnclose.addEventListener('click', toggle);
+	Btnclose.addEventListener('click', () => {
+		burger.classList.remove('burger__on')
+		burger.classList.add('off')
+		burgerWindow.classList.remove('burger__on')
+		burgerWindow.classList.add('off')
+		body.classList.remove('fixed')
+	})
+})
