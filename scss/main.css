@@ -49,6 +49,7 @@
   font-weight: 600;
   color: var(--color-yellow);
   padding-bottom: 40px;
+  text-align: center;
 }
 .home__hero__projects {
   display: flex;
