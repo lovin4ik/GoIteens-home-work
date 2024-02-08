@@ -10,9 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
 		burgerWindow.classList.add('burger__on')
 		burgerWindow.classList.remove('off')
 		body.classList.add('fixed')
+		Btnclose.classList.remove('off')
 	})
 
 	Btnclose.addEventListener('click', () => {
+		Btnclose.classList.add('off')
 		burger.classList.remove('burger__on')
 		burger.classList.add('off')
 		burgerWindow.classList.remove('burger__on')

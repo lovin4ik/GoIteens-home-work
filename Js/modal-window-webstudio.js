@@ -4,7 +4,7 @@ var BtnOpen = document.querySelector('.page04__hero__btn');
 var Btnclose = document.querySelector('.close');
 
 var toggle = () => {
-	modal.classList.toggle('off');
+	modal.classList.toggle('off__modal');
 	modalWindow.classList.toggle('modal__on')
 };
 
