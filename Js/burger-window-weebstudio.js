@@ -21,4 +21,5 @@ document.addEventListener('DOMContentLoaded', function() {
 		burgerWindow.classList.add('off')
 		body.classList.remove('fixed')
 	})
+
 })
