@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 .home__header {
   width: 100%;
@@ -354,21 +354,22 @@ table td {
 }
 .page04__header__logo {
   padding-right: 50px;
-  font-size: "Raleway" sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #000;
   font-size: 26px;
   font-weight: 700;
 }
 .page04__header__logo > .cyan {
-  font-family: "Oleo-script";
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
   font-size: 26px;
-  font-weight: 400;
   line-height: 36px;
 }
 .page04__header__logo span {
   font-weight: 400;
 }
 .page04__header__address {
+  font-style: normal;
   display: flex;
   gap: 30px;
   flex-direction: row;
