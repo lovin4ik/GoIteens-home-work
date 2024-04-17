@@ -388,7 +388,6 @@ table td {
 }
 
 .page04__hero {
-  background-color: rgba(47, 48, 58, 0.4);
   position: relative;
 }
 .page04__hero__wrapper {
@@ -840,6 +839,9 @@ table td {
   margin-top: 5px;
   transition: 0.4s;
 }
+.page04__modal__window > form > .inputs > div > label > input:focus {
+  border: 1px solid #2196f3;
+}
 .page04__modal__window > form > .inputs > div > label > textarea {
   resize: none;
   width: 100%;
@@ -876,6 +878,7 @@ table td {
   font-weight: 700;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 .page04__modal__window__title {
   padding: 40px 40px 10px 40px;
@@ -937,6 +940,10 @@ table td {
   font-weight: 400;
   transition: 0.3s;
   font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+.page04__footer__menu li:nth-child(2) {
+  color: #fff;
 }
 .page04__footer__menu li:hover {
   color: #fff;
@@ -995,9 +1002,19 @@ table td {
   outline: none;
   color: #fff;
   height: 50px;
+  transition: 0.3s;
+}
+.page04__footer__form > .inputs > input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3019607843);
 }
 .page04__footer__form > .inputs > input::placeholder {
   color: rgba(255, 255, 255, 0.3019607843);
+}
+.page04__footer__form > .inputs > input:hover {
+  border: 1px solid #2196f3;
+}
+.page04__footer__form > .inputs > input:focus {
+  border: 1px solid #2196f3;
 }
 .page04__footer__form > .inputs > button {
   display: flex;
@@ -1632,6 +1649,4 @@ footer {
     font-weight: 900;
     line-height: 42px;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
